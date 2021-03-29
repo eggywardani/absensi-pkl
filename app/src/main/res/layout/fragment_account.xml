@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="none"
+    tools:context=".ui.account.AccountFragment">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:background="@drawable/bg_header"
+            android:orientation="vertical" >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="26sp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/montserrat"
+                android:text="@string/hai"/>
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_marginEnd="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="26sp"
+                android:layout_marginStart="30dp"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="@string/nama"/>
+
+        </LinearLayout>
+        <RelativeLayout
+            android:id="@+id/container"
+            android:background="@drawable/bg_container"
+            android:layout_below="@id/header"
+            android:layout_width="match_parent"
+            android:layout_marginTop="-50dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <include
+                android:id="@+id/bio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                layout="@layout/bio_layout"/>
+
+            <RelativeLayout
+                android:id="@+id/btn_logout"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="@drawable/bg_button_logout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:layout_below="@id/bio"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_logout"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_logout"
+                    app:tint="@color/red" />
+                <TextView
+                    android:textSize="20sp"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/iv_logout"
+                    android:fontFamily="@font/montserrat"
+                    android:textColor="@color/red"
+                    android:layout_marginStart="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/logout"/>
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </RelativeLayout>
+</ScrollView>

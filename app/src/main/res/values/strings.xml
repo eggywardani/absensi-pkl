@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Aplikasi Absensi</string>
+    <string name="bumiweb_pkl">Bumiweb</string>
+    <string name="akun">Akun</string>
+    <string name="riwayat">Riwayat</string>
+    <string name="presensi">Presensi</string>
+    <string name="email">Email</string>
+    <string name="login">Login</string>
+    <string name="login_untuk_melanjutkan">Login untuk melanjutkan</string>
+    <string name="password">Password</string>
+    <string name="register">Daftar</string>
+    <string name="nama">Nama</string>
+    <string name="laki_laki">Laki-laki</string>
+    <string name="alamat">Alamat</string>
+    <string name="instansi">Instansi</string>
+    <string name="nomor_handphone">Nomor Handphone</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hai">Hai</string>
+    <string name="logout">Keluar</string>
+    <string name="jenis_kelamin">Jenis Kelamin</string>
+    <string name="ambil_gambar">Klik disini untuk Presensi </string>
+    <string name="ubah">Ubah</string>
+    <string name="hadir">Hadir</string>
+    <string name="izin">Izin</string>
+    <string name="sakit">Sakit</string>
+
+    <string-array name="status_array">
+        <item>Izin</item>
+        <item>Sakit</item>
+    </string-array>
+</resources>

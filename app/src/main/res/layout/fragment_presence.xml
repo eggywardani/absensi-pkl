@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="none"
+    android:layout_height="match_parent"
+    tools:context=".ui.presence.PresenceFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/bg_header"
+            android:gravity="center"
+            android:id="@+id/header"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextClock
+                android:layout_width="wrap_content"
+                android:layout_marginTop="-20dp"
+                android:layout_height="wrap_content"
+                android:format24Hour="EEEE, dd MMMM yyyy"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_below="@id/header"
+            android:layout_width="match_parent"
+            android:layout_marginTop="-30dp"
+            android:paddingBottom="20dp"
+            android:background="@drawable/bg_container_presensi"
+            android:layout_height="wrap_content">
+
+
+            <RelativeLayout
+                android:id="@+id/image_capture"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:layout_above="@+id/btn_absen"
+                android:background="@drawable/bg_capture_border"
+                android:visibility="invisible">
+
+                <ImageView
+                    android:id="@+id/image"
+                    android:layout_margin="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_camera" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/btn_capture"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:clickable="true"
+                android:focusable="true">
+
+                <ImageView
+                    android:id="@+id/iv_capture"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/ic_camera" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/iv_capture"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/montserrat"
+                    android:text="@string/ambil_gambar"
+                    android:textColor="@color/black" />
+            </RelativeLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_kirim"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="10dp"
+                android:background="@drawable/bg_button"
+                android:text="Hadir"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:visibility="invisible" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_absen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="10dp"
+                android:background="@drawable/bg_button"
+                android:text="Tidak Hadir"
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</ScrollView>
